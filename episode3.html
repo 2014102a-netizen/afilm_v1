@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эпизод 3 — AFilm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">AFilm</a>
+        <nav class="main-nav">
+          <a href="index.html">Главная</a>
+          <a href="cameras.html">Справочник камер</a>
+          <a href="vision.html">Расследование</a>
+          <a href="index.html#about">О проекте</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container" data-correct="sony_hdv">
+        <div class="episode-header">
+            <a href="episode2.html" class="btn btn-back">← Назад</a>
+            <div class="episode-progress">Эпизод 3 из 4</div>
+        </div>
+
+        <h1 class="episode-title">Эпизод 3: Улики</h1>
+        <p class="episode-description">
+            Детектив находит странные записи. Режиссёр зовёт оператора. Они смотрят в камеру. Кто-то ждёт у туалета. Записи якобы из одной ночи, но камеры выдают разное время. Найди несоответствие.
+        </p>
+
+        <div class="video-grid">
+            <!-- Video 1: Sony HDV -->
+            <div class="video-item">
+                <iframe src="https://drive.google.com/file/d/15-sffNGgF94dFmk-HYfyGGYsQ9AF5L-B/preview" width="100%" height="300" allow="autoplay"></iframe>
+                <div class="video-info">
+                    <div class="camera-name">Sony HC1 (HDV) — Зовёт</div>
+                    <button class="camera-btn" onclick="checkAnswer('sony_hdv')">
+                        Выбрать Sony HDV
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video 2: Canon XL1 -->
+            <div class="video-item">
+                <iframe src="https://drive.google.com/file/d/1AA6J3_Z-NCspFsJw6E3n9sghl0Qi65lr/preview" width="100%" height="300" allow="autoplay"></iframe>
+                <div class="video-info">
+                    <div class="camera-name">Canon XL1 — Смотрят</div>
+                    <button class="camera-btn" onclick="checkAnswer('xl1_2')">
+                        Выбрать Canon XL1
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video 3: Sony TRV900 -->
+            <div class="video-item">
+                <iframe src="https://drive.google.com/file/d/1hBHPpBKwCr4RTJQjOsVaEihqqATOvEZa/preview" width="100%" height="300" allow="autoplay"></iframe>
+                <div class="video-info">
+                    <div class="camera-name">Sony TRV900 — У туалета</div>
+                    <button class="camera-btn" onclick="checkAnswer('trv900_2')">
+                        Выбрать Sony TRV900
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Answer Feedback -->
+        <div class="answer-feedback" id="answer-feedback">
+            <div class="feedback-icon" id="feedback-icon"></div>
+            <div class="feedback-title" id="feedback-title"></div>
+            <p class="feedback-text" id="feedback-text"></p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-secondary" onclick="retryEpisode()">Попробовать снова</button>
+                <a href="episode4.html" class="btn" id="next-button" style="display: none;">Следующий эпизод →</a>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-panel); border-radius: 12px; border: 1px solid var(--border-color);">
+            <h3 style="color: var(--accent-red); margin-bottom: 1rem;">💡 Подсказка от Пикси</h3>
+            <p style="color: var(--text-secondary);">
+                Sony HC1 (HDV) — первое поколение HD-видео с яркими, насыщенными цветами и высоким разрешением. Эта запись явно выделяется своей "цифровой" чистотой и контрастом, что выдаёт другое время съёмки по сравнению с тёплыми тонами старых камер.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

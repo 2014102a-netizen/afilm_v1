@@ -887,6 +887,104 @@ body {
   line-height: 1.6;
 }
 
+/* Content Wrapper - универсальный контейнер для секций */
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Концепция */
+.concept-section {
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.concept-section h2 {
+  color: #ff8c42;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.concept-section p {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Секция камер */
+.cameras-section {
+  padding: 80px 20px;
+  background: var(--bg-dark);
+}
+
+.cameras-section h2 {
+  color: #ff8c42;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cameras-section p {
+  color: #ddd;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Список команды */
+.team-list-section {
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.team-list-section h2 {
+  color: #ff8c42;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Благодарности */
+.thanks-section {
+  padding: 80px 20px;
+  background: var(--bg-dark);
+}
+
+.thanks-section h2 {
+  color: #ff8c42;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.thanks-section p {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Футер */
+.main-footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 140, 66, 0.2);
+}
+
+.main-footer p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
 /* Мобильная версия для hero */
 @media (max-width: 768px) {
   .hero-title {
@@ -912,5 +1010,18 @@ body {
 
   .footer-section h3 {
     font-size: 22px;
+  }
+
+  .concept-section h2,
+  .cameras-section h2,
+  .team-list-section h2,
+  .thanks-section h2 {
+    font-size: 28px;
+  }
+
+  .concept-section p,
+  .cameras-section p,
+  .thanks-section p {
+    font-size: 16px;
   }
 }

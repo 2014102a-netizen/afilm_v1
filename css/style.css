@@ -121,6 +121,13 @@ body {
     display: block;
 }
 
+.video-container iframe {
+    max-width: 800px;
+    width: 100%;
+    height: 480px;
+    border-radius: 8px;
+}
+
 /* Vision Screens */
 .vision-screen {
     display: none;
